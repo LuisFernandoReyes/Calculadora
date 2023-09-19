@@ -3,14 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Calculadora</h1>
+    <form action="calculadora.js" method="post">
+        <div class="table-responsive">
+            <table class="table table-primary">
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            <input type="text" id="num1" placeholder="Numero 1" aria-label="Username">
+                        </th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="text" id="Oper" placeholder="Operacion" aria-label="Username">
+                        </td>
+                        <td>Resultado</td>
+                        <td> 
+                            <input type="text" id="num1" placeholder="Resultado" aria-label="Username">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" id="num2" placeholder="Numero 2" aria-label="Username">
+                        </td>
+                        <td>
+                        </td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <input name="sumar" id="sumar" class="btn btn-primary" type="button" value="+">
+            <input name="restar" id="restar" class="btn btn-primary" type="button" value="-">
+            <input name="multiplicar" id="mul" class="btn btn-primary" type="button" value="*">
+            <input name="dividir" id="divi" class="btn btn-primary" type="button" value="/">
+        </div>
+    </form>
 
-
-
-
-    <script src="calculadora.js"></script>
+    <script src="./js/calculadora.js"> </script>
 </body>
+
 </html>
